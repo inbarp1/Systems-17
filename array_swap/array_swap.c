@@ -1,14 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int print_array(int ar[10]){
-  int i = 0;
-  while(i<10){
-    printf("ar[%d]: %d \n",i, ar[i]);
-    i++;
-  }
-  return 0;
-}
 int main(){
   int a[10];
   int i = 0;
@@ -20,7 +12,9 @@ int main(){
   }
   a[9]=0;
   printf("The orginal array:\n");
-  print_array(a);
+  for(int x= 0; x<10; x++){
+    printf("arr[%d]: %d \n",i, a[x]);
+  }
   //first array
   int b[10];
   i=0;
@@ -31,7 +25,10 @@ int main(){
     i++;
   }
   printf("The second array:\n");
-  print_array(b);
+  for(int x= 0; x<10; x++){
+    printf("arr2[%d]: %d \n",i, b[x]);
+  }
+  //secondarray
 return 0;
 
 }
