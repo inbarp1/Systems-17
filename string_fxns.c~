@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int decide(char *str1, char *str2){
+Int ans;
+ans = strncmp(str1, str2, 5);
+   if(ans < 0)
+   {
+      printf(“%s is less than%s”),str1,str2;
+   }
+   else if(ans > 0) 
+   {
+      printf(“%s is less than %s“,str1,str2);
+   }
+   else 
+   {
+      printf(“%s is equal to %s”,str1,str2);
+   }
+return 0;
+}
+int main ()
+{
+   char str1[]="abcdef"'
+   char str2[]="ABCDEF";
+decide(str1,str2);
+   return(0);
+}
